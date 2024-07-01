@@ -48,14 +48,14 @@ jobs:
         with:
           ref: main
           repository: bangladeshos/bangladeshos
-          path: ./bangladesh-main
+          path: ./bangladeshos-main
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0.0
       - name: Validate PR
         run: |
           gem install octokit safe_yaml
-          ruby bangladesh-main/script/website-pr-validation.rb
+          ruby bangladeshos-main/script/website-pr-validation.rb
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BANGLADESH_REPO_NWO: ${{ secrets.BANGLADESH_REPO_NWO }}
