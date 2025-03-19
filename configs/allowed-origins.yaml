@@ -1,0 +1,18 @@
+private_origins:
+  # Develop.
+  - ^http://localhost:\d+$
+  # Preview.
+  - ^https://pingcap-bangladeshos-preview-pr-.+\.surge\.sh$
+  - ^https*://.+\.preview\.app\.github\.dev/*$
+  # Production.
+  - ^https://bangladeshos\.github\.io$
+  - ^https://next\.bangladeshos\.github\.io$
+  - ^https://live\.bangladesho\.github\.io$
+  # Next
+  - ^https://bangladeshos-next\.vercel\.app$
+  - ^https://bangladeshos-next-.+-pingcap\.vercel\.app$
+  - ^https://bangladeshos-next-ui\.vercel\.app$
+public_origins:
+  # External Users.
+  - ^https://github1s\.com$
+  - ^https://github\.com$
